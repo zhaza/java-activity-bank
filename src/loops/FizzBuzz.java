@@ -15,6 +15,16 @@ public class FizzBuzz {
 //    ALL OF YOUR WORK WILL BE DONE IN THE fizzBuzz() METHOD.
 //    your method needs to return all of the altered values from the incoming ArrayList in String format
     public static void fizzBuzz(ArrayList<Integer> testArray){
+
+        if (testArray.get(i) % 3 == 0 && testArray.get(i) % 5 == 0) {
+            return testArray.set(i) = "FizzBuzz";
+        }else if (testArray.get(i) % 3 == 0) {
+            return testArray.set(i) = "Fizz";
+        }else if (testArray.get(i) % 5 == 0) {
+            return testArray.set(i) = "Buzz";
+        } else {
+            return testArray.get(i);
+        }
         System.out.println(testArray);
     }
 
