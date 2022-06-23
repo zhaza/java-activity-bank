@@ -1,5 +1,7 @@
 package arrays_and_arraylists;
 
+import java.util.ArrayList;
+
 public class ArrayListsPractice {
     public static void main(String[] args) {
 //        Create an ArrayList with 5 elements
