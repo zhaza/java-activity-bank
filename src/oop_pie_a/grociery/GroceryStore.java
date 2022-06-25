@@ -6,16 +6,15 @@ public class GroceryStore {
     public String managerName;
     private int managerSalary;
     public int[] stock;
-    public String greetCustomer() {
+    public void greetCustomer() {
         System.out.println("Welcome to "+storeName+"!");
     }
-    public int makeTransaction(int[] stock, ) {
-
-    }
+//    public int makeTransaction(int[] stock, ) {
+//
+//    }
 
     public static void main(String[] args) {
-        storeName = "Safeway";
-
+        String storeName = "Safeway";
     }
 
 }

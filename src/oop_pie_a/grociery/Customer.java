@@ -16,9 +16,9 @@ public class Customer {
     private String askManagersSalary() {
         System.out.println(managerSalary);
     }
-    public String addItemToCart(item) {
-        cart.add(item);
-    }
+//    public String addItemToCart(item) {
+//        cart.add(item);
+//    }
     public String checkedoutAtRegister() {
         System.out.println("Completed purchase!");
     }

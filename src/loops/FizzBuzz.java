@@ -14,25 +14,27 @@ public class FizzBuzz {
     }
 //    ALL OF YOUR WORK WILL BE DONE IN THE fizzBuzz() METHOD.
 //    your method needs to return all of the altered values from the incoming ArrayList in String format
-    public static void fizzBuzz(ArrayList<Integer> testArray){
-
-        if (testArray.get(i) % 3 == 0 && testArray.get(i) % 5 == 0) {
-            return testArray.set(i) = "FizzBuzz";
-        }else if (testArray.get(i) % 3 == 0) {
-            return testArray.set(i) = "Fizz";
-        }else if (testArray.get(i) % 5 == 0) {
-            return testArray.set(i) = "Buzz";
-        } else {
-            return testArray.get(i);
+    public static ArrayList<String> fizzBuzz(ArrayList<Integer> testArray){
+        ArrayList<String> fizzBuzzArr = new ArrayList<>();
+        for (int currentNum : testArray) {
+            if (currentNum % 3 == 0 && currentNum % 5 == 0) {
+                fizzBuzzArr.add("FizzBuzz");
+            } else if (currentNum % 3 == 0) {
+                fizzBuzzArr.add("Fizz");
+            } else if (currentNum % 5 == 0) {
+                fizzBuzzArr.add("Buzz");
+            } else {
+                fizzBuzzArr.add(String.valueOf(currentNum));
+            }
         }
-        System.out.println(testArray);
+            return fizzBuzzArr;
     }
 
     public static void main(String[] args) {
         ArrayList<Integer> testArray = fizzBuzzTest(10);
-        fizzBuzz(testArray);
+        System.out.println(testArray);
 //        once your fizzbuzz() method returns something, uncomment the line below and run your application.
-//        System.out.println(fizzBuzz(testArray));
+        System.out.println(fizzBuzz(testArray));
     }
 
 }
