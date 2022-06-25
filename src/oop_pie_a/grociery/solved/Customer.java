@@ -1,6 +1,5 @@
 package oop_pie_a.grociery.solved;
 
-
 import java.util.ArrayList;
 
 public class Customer {
