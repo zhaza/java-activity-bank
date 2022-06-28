@@ -39,6 +39,5 @@ public class ArrayListsPractice {
             System.out.println(shoes);
 
 
-
     }
 }
